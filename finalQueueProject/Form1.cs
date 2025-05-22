@@ -261,21 +261,21 @@ namespace finalQueueProject
 
         private void hidePanelsTimer_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value < progressBar1.Maximum)
-            {
-                progressBar1.Value = Math.Min(progressBar1.Value + 2, progressBar1.Maximum);
-            }
-            else if (progressBar1.Value >= progressBar1.Maximum)
-            {
-                hidePanelsTimer.Stop();
-                hidePanelsTimer.Dispose();
-                servicePanel.Visible = false;
-                numPanel.Visible = false;
+            //if (progressBar1.Value < progressBar1.Maximum)
+            //{
+            //    progressBar1.Value = Math.Min(progressBar1.Value + 2, progressBar1.Maximum);
+            //}
+            //else if (progressBar1.Value >= progressBar1.Maximum)
+            //{
+            //    hidePanelsTimer.Stop();
+            //    hidePanelsTimer.Dispose();
+            //    servicePanel.Visible = false;
+            //    numPanel.Visible = false;
 
-                categoryPanel.Visible = true;
-                progressBar1.Value = 0;// Stop when full
-                //MessageBox.Show("Done!");
-            }
+            //    categoryPanel.Visible = true;
+            //    progressBar1.Value = 0;// Stop when full
+            //    //MessageBox.Show("Done!");
+            //}
         }
 
         private void panel32_Paint(object sender, PaintEventArgs e)
