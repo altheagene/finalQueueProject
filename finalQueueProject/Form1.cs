@@ -58,11 +58,7 @@ namespace finalQueueProject
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            callBtnClick(c4NSLabel, "4");
-
-        }
+        
 
         private void label19_Click(object sender, EventArgs e)
         {
@@ -84,12 +80,8 @@ namespace finalQueueProject
         }
 
 
-        private void button13_Click(object sender, EventArgs e)
-        {
-          
-            generateNumberAndUpdateQueue(c1QueueGrid, counter1List, "c1queueCol", "categCol");
-           
-        }
+        
+        //-------------------------------SERVICE BUTTON CLICK EVENT -----------------------------//
 
         private void generateNumberAndUpdateQueue(DataGridView queueGrid, LinkedList counterList, String queueCol, String categCol)
         {
@@ -141,6 +133,12 @@ namespace finalQueueProject
             counterList.display();
         }
 
+        private void button13_Click(object sender, EventArgs e)
+        {
+
+            generateNumberAndUpdateQueue(c1QueueGrid, counter1List, "c1queueCol", "categCol");
+
+        }
         private void accServicesBtn_Click(object sender, EventArgs e)
         {
             generateNumberAndUpdateQueue(c2QueueGrid, counter2List, "c2queueCol", "c2categCol");
@@ -156,12 +154,9 @@ namespace finalQueueProject
             generateNumberAndUpdateQueue(c4QueueGrid, counter4List, "c4queueCol", "c4categCol");
         }
 
-        private void c1NextBtn_Click(object sender, EventArgs e)
-        {
+       
 
-            nextBtnClick(c1QueueGrid, c1StaffNSLbl, c1NSLabel, counter1List, "1");
-            
-        }
+        //----------------------------NEXT BUTTON CLICK EVENT-------------------------------------//
 
         private void nextBtnClick(DataGridView queueGrid, Label staffNSLbl, Label counterNSLabel, LinkedList counterList, String counterNumber)
         {
@@ -183,6 +178,12 @@ namespace finalQueueProject
             }
         }
 
+        private void c1NextBtn_Click(object sender, EventArgs e)
+        {
+
+            nextBtnClick(c1QueueGrid, c1StaffNSLbl, c1NSLabel, counter1List, "1");
+
+        }
         private void c2NextBtn_Click(object sender, EventArgs e)
         {
             nextBtnClick(c2QueueGrid, c2StaffNSLbl, c2NSLabel, counter2List, "2");
@@ -211,6 +212,8 @@ namespace finalQueueProject
             //}
         }
 
+
+        // ---------------------------------RECALL CLICK EVENT ---------------------------------------------//
         private void c1RecallBtn_Click(object sender, EventArgs e)
         {
             callBtnClick(c1NSLabel, "1");
@@ -226,6 +229,12 @@ namespace finalQueueProject
         private void c3RecallBtn_Click(object sender, EventArgs e)
         {
             callBtnClick(c3NSLabel, "3");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            callBtnClick(c4NSLabel, "4");
+
         }
 
         private void callBtnClick(Label NSLabel, String counterNumber)
@@ -259,6 +268,11 @@ namespace finalQueueProject
                 progressBar1.Value = 0;// Stop when full
                 //MessageBox.Show("Done!");
             }
+        }
+
+        private void panel32_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

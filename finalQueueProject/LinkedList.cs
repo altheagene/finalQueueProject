@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace finalQueueProject
 {
@@ -27,6 +28,7 @@ namespace finalQueueProject
         Node head;
         Node tail;
         int size = 0;
+        int capacity = 50;
         int currentNum;
 
         public LinkedList(int startingNum)
@@ -38,7 +40,15 @@ namespace finalQueueProject
 
         public int enqueue()
         {
-            Node new_node = new Node(currentNum++);
+            if (currentNum == 1999 && size < capacity)
+            {
+                currentNum = 1000;
+            }else if (currentNum == 1999 && size == capacity)
+            {
+                MessageBox.Show("Queue is full. Please come back later.");
+            }
+
+                Node new_node = new Node(currentNum++);
             new_node.priority = false;
             if (size == 0)
             {
@@ -60,6 +70,15 @@ namespace finalQueueProject
 
         public int priorityEnqueue()
         {
+            if (currentNum == 1999 && size < capacity)
+            {
+                currentNum = 1000;
+            }
+            else if (currentNum == 1999 && size == capacity)
+            {
+                MessageBox.Show("Queue is full. Please come back later.");
+            }
+
             Node new_node = new Node(currentNum++);
             new_node.priority = true;
 
@@ -154,6 +173,6 @@ namespace finalQueueProject
             return true; // means that queue is empty
         }
 
-        //public void isFull()
+        
     }
 }
