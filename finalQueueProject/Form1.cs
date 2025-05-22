@@ -89,6 +89,10 @@ namespace finalQueueProject
             if (priority)
             {
                 int num = counterList.priorityEnqueue();
+
+                if (num == -1)
+                    return;
+
                 generateNumLbl.Text = num.ToString();
                 numPanel.Visible = true;
                 int rowsCount = queueGrid.RowCount;
@@ -124,6 +128,10 @@ namespace finalQueueProject
             else
             {
                 int num = counterList.enqueue();
+
+                if (num == -1)
+                    return;
+
                 generateNumLbl.Text = num.ToString();
                 numPanel.Visible = true;
                 queueGrid.Rows.Add(num, "Regular", queueCol, categCol);

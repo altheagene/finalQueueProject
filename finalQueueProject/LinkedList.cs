@@ -8,6 +8,13 @@ using System.Windows.Forms;
 
 namespace finalQueueProject
 {
+
+    //This is a simple queue system for a small bank. The bank has four counters, each with different services.
+    //The capacity of the queue for each counter is 50. That is the amount of customers it can accomodate for each counter onsite.
+    //The queue inserts a priority customer at the beginning of the queue. If there is already a priority customer,
+    //priority customerss must line behind the earlier priority customers
+
+
     class LinkedList
     {
 
@@ -28,7 +35,7 @@ namespace finalQueueProject
         Node head;
         Node tail;
         int size = 0;
-        int capacity = 50;
+        int capacity = 30;
         int currentNum;
 
         public LinkedList(int startingNum)
@@ -40,10 +47,12 @@ namespace finalQueueProject
 
         public int enqueue()
         {
-            if (currentNum == 1999 && size < capacity)
+            if (currentNum == 1999)
             {
                 currentNum = 1000;
-            }else if (currentNum == 1999 && size == capacity)
+            }
+
+            if (size == capacity)
             {
                 MessageBox.Show("Queue is full. Please come back later.");
             }
@@ -70,13 +79,15 @@ namespace finalQueueProject
 
         public int priorityEnqueue()
         {
-            if (currentNum == 1999 && size < capacity)
+            if (currentNum == 1999)
             {
                 currentNum = 1000;
             }
-            else if (currentNum == 1999 && size == capacity)
+
+            if (size == capacity)
             {
                 MessageBox.Show("Queue is full. Please come back later.");
+                return -1;
             }
 
             Node new_node = new Node(currentNum++);

@@ -34,9 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
@@ -468,7 +465,7 @@
             this.c1QueueGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -614,7 +611,7 @@
             this.c2QueueGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -624,14 +621,6 @@
             this.c2QueueGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.c2queueCol,
             this.c2CategoryCol});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.c2QueueGrid.DefaultCellStyle = dataGridViewCellStyle4;
             this.c2QueueGrid.Location = new System.Drawing.Point(498, 124);
             this.c2QueueGrid.Name = "c2QueueGrid";
             this.c2QueueGrid.RowHeadersVisible = false;
@@ -750,26 +739,18 @@
             this.c3QueueGrid.AllowUserToAddRows = false;
             this.c3QueueGrid.BackgroundColor = System.Drawing.SystemColors.Control;
             this.c3QueueGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.c3QueueGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.c3QueueGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.c3QueueGrid.ColumnHeadersHeight = 35;
             this.c3QueueGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.c3queueCol,
             this.c3CategoryCol});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.c3QueueGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.c3QueueGrid.Location = new System.Drawing.Point(498, 124);
             this.c3QueueGrid.Name = "c3QueueGrid";
             this.c3QueueGrid.RowHeadersVisible = false;
@@ -797,7 +778,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Pink;
+            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Location = new System.Drawing.Point(359, 30);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(170, 38);
@@ -876,10 +857,10 @@
             this.tabPage4.Controls.Add(this.c4RecallBtn);
             this.tabPage4.Controls.Add(this.panel10);
             this.tabPage4.Controls.Add(this.panel11);
-            this.tabPage4.Location = new System.Drawing.Point(4, 42);
+            this.tabPage4.Location = new System.Drawing.Point(4, 44);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(938, 594);
+            this.tabPage4.Size = new System.Drawing.Size(938, 592);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Counter 4 (Customer Support)";
             // 
@@ -887,7 +868,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Gold;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(359, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 38);
@@ -899,26 +880,18 @@
             this.c4QueueGrid.AllowUserToAddRows = false;
             this.c4QueueGrid.BackgroundColor = System.Drawing.SystemColors.Control;
             this.c4QueueGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.c4QueueGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.c4QueueGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.c4QueueGrid.ColumnHeadersHeight = 35;
             this.c4QueueGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.c4queueCol,
             this.c4CategoryCol});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.c4QueueGrid.DefaultCellStyle = dataGridViewCellStyle8;
             this.c4QueueGrid.Location = new System.Drawing.Point(498, 124);
             this.c4QueueGrid.Name = "c4QueueGrid";
             this.c4QueueGrid.RowHeadersVisible = false;
@@ -1057,9 +1030,9 @@
             this.numPanel.Controls.Add(this.progressBar1);
             this.numPanel.Controls.Add(this.generateNumLbl);
             this.numPanel.Controls.Add(this.label14);
-            this.numPanel.Location = new System.Drawing.Point(173, 148);
+            this.numPanel.Location = new System.Drawing.Point(190, 148);
             this.numPanel.Name = "numPanel";
-            this.numPanel.Size = new System.Drawing.Size(643, 333);
+            this.numPanel.Size = new System.Drawing.Size(693, 333);
             this.numPanel.TabIndex = 2;
             this.numPanel.Visible = false;
             // 
@@ -1067,7 +1040,7 @@
             // 
             this.progressBar1.Location = new System.Drawing.Point(0, 0);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(643, 23);
+            this.progressBar1.Size = new System.Drawing.Size(693, 23);
             this.progressBar1.TabIndex = 19;
             // 
             // generateNumLbl
@@ -1097,9 +1070,9 @@
             this.customSupportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(165)))), ((int)(((byte)(31)))));
             this.customSupportBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customSupportBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.customSupportBtn.Location = new System.Drawing.Point(510, 354);
+            this.customSupportBtn.Location = new System.Drawing.Point(553, 352);
             this.customSupportBtn.Name = "customSupportBtn";
-            this.customSupportBtn.Size = new System.Drawing.Size(289, 92);
+            this.customSupportBtn.Size = new System.Drawing.Size(330, 92);
             this.customSupportBtn.TabIndex = 16;
             this.customSupportBtn.Text = "Customer Support";
             this.customSupportBtn.UseVisualStyleBackColor = false;
@@ -1110,9 +1083,9 @@
             this.accServicesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(23)))), ((int)(((byte)(135)))));
             this.accServicesBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accServicesBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.accServicesBtn.Location = new System.Drawing.Point(510, 237);
+            this.accServicesBtn.Location = new System.Drawing.Point(553, 237);
             this.accServicesBtn.Name = "accServicesBtn";
-            this.accServicesBtn.Size = new System.Drawing.Size(289, 92);
+            this.accServicesBtn.Size = new System.Drawing.Size(330, 92);
             this.accServicesBtn.TabIndex = 15;
             this.accServicesBtn.Text = "Account Services";
             this.accServicesBtn.UseVisualStyleBackColor = false;
@@ -1125,7 +1098,7 @@
             this.LoanCreditBtn.ForeColor = System.Drawing.Color.Snow;
             this.LoanCreditBtn.Location = new System.Drawing.Point(194, 352);
             this.LoanCreditBtn.Name = "LoanCreditBtn";
-            this.LoanCreditBtn.Size = new System.Drawing.Size(289, 92);
+            this.LoanCreditBtn.Size = new System.Drawing.Size(335, 92);
             this.LoanCreditBtn.TabIndex = 14;
             this.LoanCreditBtn.Text = "Loans / Credit";
             this.LoanCreditBtn.UseVisualStyleBackColor = false;
@@ -1138,7 +1111,7 @@
             this.depositBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.depositBtn.Location = new System.Drawing.Point(194, 237);
             this.depositBtn.Name = "depositBtn";
-            this.depositBtn.Size = new System.Drawing.Size(289, 92);
+            this.depositBtn.Size = new System.Drawing.Size(335, 92);
             this.depositBtn.TabIndex = 13;
             this.depositBtn.Text = "Deposit / Withdrawal";
             this.depositBtn.UseVisualStyleBackColor = false;
@@ -1149,7 +1122,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(400, 148);
+            this.label15.Location = new System.Drawing.Point(436, 156);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(190, 31);
             this.label15.TabIndex = 6;
