@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Speech.Synthesis;
 using System.Media;
-//using System.Reflection.Emit;
+using System.Drawing.Drawing2D;
 
 namespace finalQueueProject
 {
@@ -19,9 +19,25 @@ namespace finalQueueProject
         LinkedList counter2List = new LinkedList(2000);
         LinkedList counter3List = new LinkedList(3000);
         LinkedList counter4List = new LinkedList(4000);
-        Boolean priority = false;
-        //Timer hidePanelsTimer = new Timer();
 
+        Boolean priority = false;
+
+        public Form1()
+        {
+            InitializeComponent();
+            hidePanelsTimer.Interval = 2000;
+            hidePanelsTimer.Tick += hidePanels;
+            Speak(" ");
+
+            Panel[] counterPanels = { c1panel, c2panel, c3panel, c4panel, staffNSPanel, c2StaffPanel, c3StaffPanel, c4StaffPanel };
+            foreach (Panel panel in counterPanels)
+            {
+                RoundPanel(panel, 20);
+            }
+        }
+
+
+        //-------------TIMER METHODS--------------------------------------------//
         private void hidePanels(object sender, EventArgs e)
         {
             servicePanel.Visible = false;
@@ -31,27 +47,6 @@ namespace finalQueueProject
             categoryPanel.Visible = true;
             
         }
-
-        private void hidePanelTimer_Tick(object sender, EventArgs e)
-        {
-            if (progressBar1.Value < progressBar1.Maximum)
-            {
-                progressBar1.Value += 1;
-            }
-            else
-            {
-                hidePanelsTimer.Stop(); // Stop when full
-                MessageBox.Show("Done!");
-            }
-        }
-        public Form1()
-        {
-            InitializeComponent(); 
-            hidePanelsTimer.Interval = 2000;
-            hidePanelsTimer.Tick += hidePanels;
-            Speak(" ");
-        }
-
        
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -211,13 +206,11 @@ namespace finalQueueProject
 
         public void Speak(string text)
         {
-            //using (var synth = new SpeechSynthesizer())
-            //{
+           
                 var synth = new SpeechSynthesizer();
                 synth.SetOutputToDefaultAudioDevice();
-                synth.SelectVoice("Microsoft Zira Desktop");  // Select specific voice here
+                synth.SelectVoice("Microsoft Zira Desktop");  
                 synth.SpeakAsync(text);
-            //}
         }
 
 
@@ -279,6 +272,36 @@ namespace finalQueueProject
         }
 
         private void panel32_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //PANEL DESIGNS
+
+        public static void RoundPanel(Panel panel, int radius)
+        {
+            GraphicsPath path = new GraphicsPath();
+            path.StartFigure();
+            path.AddArc(new Rectangle(0, 0, radius, radius), 180, 90);
+            path.AddArc(new Rectangle(panel.Width - radius, 0, radius, radius), 270, 90);
+            path.AddArc(new Rectangle(panel.Width - radius, panel.Height - radius, radius, radius), 0, 90);
+            path.AddArc(new Rectangle(0, panel.Height - radius, radius, radius), 90, 90);
+            path.CloseFigure();
+
+            panel.Region = new Region(path);
+        }
+
+        private void panel22_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tab1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void c4QueueGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

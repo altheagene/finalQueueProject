@@ -12,7 +12,7 @@ namespace finalQueueProject
     //This is a simple queue system for a small bank. The bank has four counters, each with different services.
     //The capacity of the queue for each counter is 50. That is the amount of customers it can accomodate for each counter onsite.
     //The queue inserts a priority customer at the beginning of the queue. If there is already a priority customer,
-    //priority customerss must line behind the earlier priority customers
+    //priority customers must line behind the earlier priority customers
 
 
     class LinkedList
@@ -67,7 +67,6 @@ namespace finalQueueProject
             }
             else
             {
-                //Node temp = tail;
                 tail.next = new_node;
                 tail = new_node;
                 tail.priority = false;
@@ -130,25 +129,6 @@ namespace finalQueueProject
                 new_node.next = temp ;
                 size++;
             }
-
-           
-            
-
-            //if (size == 0)
-            //{
-            //    head = new_node;
-            //    tail = new_node;
-            //    tail.next = null;
-            //    size++;
-            //}
-            //else
-            //{
-            //    //Node temp = tail;
-            //    Node temp = head;
-            //    head = new_node;
-            //    head.next = temp;
-
-            //}
 
             return currentNum;
         }
