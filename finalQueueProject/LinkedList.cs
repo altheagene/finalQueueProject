@@ -57,8 +57,7 @@ namespace finalQueueProject
                 MessageBox.Show("Queue is full. Please come back later.");
                 return -1;
             }
-
-            Node new_node = new Node(currentNum++);
+            Node new_node = new Node(++currentNum); 
             new_node.priority = false;
             if (size == 0)
             {
@@ -74,7 +73,7 @@ namespace finalQueueProject
                 size++;
 
             }
-            return currentNum;
+            return new_node.data;
         }
 
         public int priorityEnqueue()
@@ -90,7 +89,7 @@ namespace finalQueueProject
                 return -1;
             }
 
-            Node new_node = new Node(currentNum++);
+            Node new_node = new Node(++currentNum);
             new_node.priority = true;
 
 
@@ -131,7 +130,7 @@ namespace finalQueueProject
                 size++;
             }
 
-            return currentNum;
+            return new_node.data;
         }
 
         public void display()

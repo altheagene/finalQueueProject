@@ -138,7 +138,6 @@ namespace finalQueueProject
             }
 
             hidePanelsTimer.Start();
-            counterList.display();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -175,7 +174,6 @@ namespace finalQueueProject
                 counterNSLabel.Text = nowServing;
                 counterList.dequeue();
                 queueGrid.Rows.RemoveAt(0);
-                counterList.display();
                 Speak("Now Serving " + nowServing[0] + " " + nowServing[1] + " " + nowServing[2] + " " + nowServing[3] + " at counter " + counterNumber);
 
             }
@@ -183,7 +181,7 @@ namespace finalQueueProject
             {
                 counterNSLabel.Text = "";
                 staffNSLbl.Text = "";
-            }
+            }           
         }
 
         private void c1NextBtn_Click(object sender, EventArgs e)
@@ -208,6 +206,8 @@ namespace finalQueueProject
             nextBtnClick(c4QueueGrid, c4StaffNSLbl, c4NSLabel, counter4List, "4");
 
         }
+
+        //-----------------------------------SPEAK EVENT-------------------------------------------------//
 
         public void Speak(string text)
         {
