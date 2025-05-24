@@ -167,7 +167,7 @@ namespace finalQueueProject
 
         private void nextBtnClick(DataGridView queueGrid, Label staffNSLbl, Label counterNSLabel, LinkedList counterList, String counterNumber)
         {
-            if (!counterList.isEmpty()) 
+            if (queueGrid.Rows.Count > 0) //checks if queue is empty
             {
                 String nowServing = queueGrid.Rows[0].Cells[0].Value.ToString();
                 staffNSLbl.Text = nowServing;

@@ -215,7 +215,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(5, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1849, 500);
+            this.panel1.Size = new System.Drawing.Size(1828, 500);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -1418,7 +1418,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1846, 618);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1825, 618);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // panel18
@@ -1429,7 +1429,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(955, 3);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(888, 612);
+            this.panel18.Size = new System.Drawing.Size(867, 612);
             this.panel18.TabIndex = 2;
             // 
             // servicePanel
@@ -1446,7 +1446,7 @@
             this.servicePanel.Controls.Add(this.label15);
             this.servicePanel.Location = new System.Drawing.Point(0, 3);
             this.servicePanel.Name = "servicePanel";
-            this.servicePanel.Size = new System.Drawing.Size(906, 627);
+            this.servicePanel.Size = new System.Drawing.Size(885, 627);
             this.servicePanel.TabIndex = 7;
             this.servicePanel.Visible = false;
             // 
@@ -1462,7 +1462,7 @@
             this.numPanel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPanel.Location = new System.Drawing.Point(3, 3);
             this.numPanel.Name = "numPanel";
-            this.numPanel.Size = new System.Drawing.Size(934, 603);
+            this.numPanel.Size = new System.Drawing.Size(975, 603);
             this.numPanel.TabIndex = 2;
             this.numPanel.Visible = false;
             // 
@@ -1580,7 +1580,7 @@
             this.categoryPanel.Controls.Add(this.regularBtn);
             this.categoryPanel.Location = new System.Drawing.Point(3, 0);
             this.categoryPanel.Name = "categoryPanel";
-            this.categoryPanel.Size = new System.Drawing.Size(919, 627);
+            this.categoryPanel.Size = new System.Drawing.Size(898, 627);
             this.categoryPanel.TabIndex = 2;
             // 
             // label13
@@ -1627,7 +1627,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1924, 1118);
+            this.ClientSize = new System.Drawing.Size(1945, 1118);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(1918, 1138);

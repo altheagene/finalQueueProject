@@ -154,18 +154,6 @@ namespace finalQueueProject
             head = temp.next;
             temp.next = null;
             size--;
-        }
-
-        public Boolean isEmpty()
-        {
-            if(size > 0)
-            {
-                return false;
-            }
-
-            return true; // means that queue is empty
-        }
-
-        
+        }       
     }
 }
