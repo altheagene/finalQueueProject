@@ -15,12 +15,12 @@ namespace finalQueueProject
 {
     public partial class Form1: Form
     {
+        //EACH COUNTER BEGINS AT A CERTAIN NUMBER AND STAYS WITHIN THAT RANGE
         LinkedList counter1List = new LinkedList(1000);
         LinkedList counter2List = new LinkedList(2000);
         LinkedList counter3List = new LinkedList(3000);
         LinkedList counter4List = new LinkedList(4000);
-
-        Boolean priority = false;
+        Boolean priority = false; //used to check if customer is a priority or not
 
         public Form1()
         {
@@ -86,7 +86,12 @@ namespace finalQueueProject
                 int num = counterList.priorityEnqueue();
 
                 if (num == -1)
+                {
+                    servicePanel.Visible = false;
+                    categoryPanel.Visible = true;
                     return;
+                }
+
 
                 generateNumLbl.Text = num.ToString();
                 numPanel.Visible = true;
@@ -163,7 +168,7 @@ namespace finalQueueProject
 
         private void nextBtnClick(DataGridView queueGrid, Label staffNSLbl, Label counterNSLabel, LinkedList counterList, String counterNumber)
         {
-            if (!counterList.isEmpty()) //queueGrid.Rows.Count != 0
+            if (!counterList.isEmpty()) 
             {
                 String nowServing = queueGrid.Rows[0].Cells[0].Value.ToString();
                 staffNSLbl.Text = nowServing;
@@ -254,21 +259,7 @@ namespace finalQueueProject
 
         private void hidePanelsTimer_Tick(object sender, EventArgs e)
         {
-            //if (progressBar1.Value < progressBar1.Maximum)
-            //{
-            //    progressBar1.Value = Math.Min(progressBar1.Value + 2, progressBar1.Maximum);
-            //}
-            //else if (progressBar1.Value >= progressBar1.Maximum)
-            //{
-            //    hidePanelsTimer.Stop();
-            //    hidePanelsTimer.Dispose();
-            //    servicePanel.Visible = false;
-            //    numPanel.Visible = false;
-
-            //    categoryPanel.Visible = true;
-            //    progressBar1.Value = 0;// Stop when full
-            //    //MessageBox.Show("Done!");
-            //}
+            
         }
 
         private void panel32_Paint(object sender, PaintEventArgs e)
@@ -276,7 +267,7 @@ namespace finalQueueProject
 
         }
 
-        //PANEL DESIGNS
+        //------------------------------------------PANEL DESIGNS-----------------------------------------
 
         public static void RoundPanel(Panel panel, int radius)
         {

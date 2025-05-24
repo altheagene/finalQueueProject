@@ -35,7 +35,7 @@ namespace finalQueueProject
         Node head;
         Node tail;
         int size = 0;
-        int capacity = 30;
+        int capacity = 50;
         int currentNum;
 
         public LinkedList(int startingNum)
@@ -49,15 +49,16 @@ namespace finalQueueProject
         {
             if (currentNum == 1999)
             {
-                currentNum = 1000;
+                currentNum = 1000; //ensures that the number does not exceed beyond 1999
             }
 
             if (size == capacity)
             {
                 MessageBox.Show("Queue is full. Please come back later.");
+                return -1;
             }
 
-                Node new_node = new Node(currentNum++);
+            Node new_node = new Node(currentNum++);
             new_node.priority = false;
             if (size == 0)
             {
@@ -80,7 +81,7 @@ namespace finalQueueProject
         {
             if (currentNum == 1999)
             {
-                currentNum = 1000;
+                currentNum = 1000; //ensures that the number does not exceed beyond 1999
             }
 
             if (size == capacity)
@@ -148,6 +149,8 @@ namespace finalQueueProject
 
         public void dequeue()
         {
+            if (head == null) return;
+
             Node temp = head;
             head = temp.next;
             temp.next = null;
